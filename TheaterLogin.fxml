@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: #96b2dd;" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MESS.TheaterLoginController">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="700.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@MESSlogo.png" />
+         </image>
+      </ImageView>
+      <HBox alignment="BOTTOM_CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <TextField fx:id="theaterID" focusTraversable="false" pickOnBounds="false" prefWidth="250.0" promptText="Enter Theater ID">
+               <font>
+                  <Font name="Tahoma" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <PasswordField fx:id="passField" focusTraversable="false" prefWidth="250.0" promptText="Enter Password">
+               <font>
+                  <Font name="Tahoma" size="20.0" />
+               </font></PasswordField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="btn_signIn" focusTraversable="false" mnemonicParsing="false" onAction="#signInButtonAction" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: #ccdefc;" text="Sign In">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Tahoma Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_reset" focusTraversable="false" mnemonicParsing="false" onAction="#resetButtonAction" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: #ccdefc;" text="Reset">
+               <font>
+                  <Font name="Tahoma Bold" size="20.0" />
+               </font></Button>
+         </children>
+      </HBox>
+      <Label fx:id="loginStatus" textFill="FIREBRICK">
+          <font>
+              <Font name="Tahoma Bold" size = "20.0"/>
+          </font>
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin>
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+   </children>
+</VBox>

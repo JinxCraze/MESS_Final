@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: #96b2dd;" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MESS.EmployeeLoginController">
+   <children>
+      <HBox alignment="CENTER_LEFT" maxHeight="30.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: #eff5fc;">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <VBox.margin>
+            <Insets bottom="25.0" />
+         </VBox.margin>
+         <children>
+            <Label fx:id="currentDate" text="CURRENTDATE">
+               <font>
+                  <Font name="Tahoma Bold" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" right="45.0" />
+               </HBox.margin></Label>
+            <Label text="TheaterID:" wrapText="true">
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Tahoma" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="theaterID" text="TheaterID">
+               <font>
+                  <Font name="Tahoma Bold" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <Label style="-fx-effect: InnerShadow;" text="Employee Login:">
+         <font>
+            <Font name="Tahoma Bold" size="48.0" />
+         </font></Label>
+      <TextField fx:id="empTextField" maxWidth="300.0" minWidth="300.0" prefHeight="75.0" prefWidth="300.0" promptText="Enter Employee ID" style="-fx-background-color: #eff5fc;">
+         <font>
+            <Font name="Tahoma" size="24.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </TextField>
+      <HBox alignment="CENTER" prefHeight="150.0" prefWidth="150.0">
+         <children>
+            <Button fx:id="btn_1" mnemonicParsing="false" onAction="#handleButton_1" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: #ccdefc;" text="1">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Tahoma Bold" size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_2" mnemonicParsing="false" onAction="#handleButton_2" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: #ccdefc;" text="2">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Tahoma Bold" size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_3" mnemonicParsing="false" onAction="#handleButton_3" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: #ccdefc;" text="3">
+               <font>
+                  <Font name="Tahoma Bold" size="30.0" />
+               </font>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="214.0" prefHeight="150.0" prefWidth="150.0">
+         <children>
+            <Button fx:id="btn_4" mnemonicParsing="false" onAction="#handleButton_4" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: #ccdefc;" text="4">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Tahoma Bold" size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_5" mnemonicParsing="false" onAction="#handleButton_5" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: #ccdefc;" text="5">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Tahoma Bold" size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_6" mnemonicParsing="false" onAction="#handleButton_6" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: #ccdefc;" text="6">
+               <font>
+                  <Font name="Tahoma Bold" size="30.0" />
+               </font>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="364.0" prefHeight="150.0" prefWidth="150.0">
+         <children>
+            <Button fx:id="btn_7" mnemonicParsing="false" onAction="#handleButton_7" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: #ccdefc;" text="7">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Tahoma Bold" size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_8" mnemonicParsing="false" onAction="#handleButton_8" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: #ccdefc;" text="8">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Tahoma Bold" size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_9" mnemonicParsing="false" onAction="#handleButton_9" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: #ccdefc;" text="9">
+               <font>
+                  <Font name="Tahoma Bold" size="30.0" />
+               </font>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="474.0" prefHeight="150.0" prefWidth="150.0">
+         <children>
+            <Button fx:id="btn_0" mnemonicParsing="false" onAction="#handleButton_0" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: #ccdefc;" text="0">
+               <font>
+                  <Font name="Tahoma Bold" size="30.0" />
+               </font>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="466.0" prefHeight="150.0" prefWidth="150.0">
+         <children>
+            <Button fx:id="btn_logout" mnemonicParsing="false" onAction="#handleLogOutButton" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: #ccdefc;" text="Log Out">
+                <HBox.margin>
+                    <Insets right="10.0" />
+                </HBox.margin>
+               <font>
+                  <Font name="Tahoma Bold" size="22.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_reset" mnemonicParsing="false" onAction="#handleResetButton" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: #ccdefc;" text="Reset">
+               <font>
+                  <Font name="Tahoma Bold" size="22.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btn_emp_signin" mnemonicParsing="false" onAction="#handleSignInButton" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: #ccdefc;" text="Sign-In">
+               
+               <font>
+                  <Font name="Tahoma Bold" size="22.0" />
+               </font>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets bottom="10.0" top="10.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="statusLabel" textFill="RED">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</VBox>
